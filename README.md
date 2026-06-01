@@ -1,20 +1,132 @@
-<<<<<<< HEAD
-# React + Vite
+# E-Commerce Checkout Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a responsive E-Commerce Checkout Application built using React and Vite. The application allows users to enter shipping details, select a payment method, review their order summary, and validate form inputs before completing checkout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project follows a clean component-based architecture to improve maintainability, readability, and scalability.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* Customer Information Form
+* Shipping Address Form
+* Payment Method Selection
+* Order Summary Section
+* Form Validation
+* Responsive Design
+* Reusable React Components
+* Clean Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# ecommerce-checkout
->>>>>>> 25d9cc039e6765456d0e0a4f44cdc05e8ac4a7c6
+---
+
+## Tech Stack
+
+* React
+* Vite
+* JavaScript (ES6+)
+* CSS3
+* HTML5
+
+---
+
+## Folder Structure
+
+```text
+src
+├── components
+│   ├── CheckoutForm.jsx
+│   ├── InputField.jsx
+│   ├── OrderSummary.jsx
+│   ├── PaymentSelector.jsx
+│   └── ErrorMessage.jsx
+│
+├── data
+│   └── paymentMethods.js
+│
+├── utils
+│   └── validation.js
+│
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+## Approach
+
+The application was designed using a modular architecture.
+
+### Components
+
+Each UI section is separated into individual reusable components to keep the code organized and maintainable.
+
+### Data Management
+
+Static payment method data is stored separately inside the data folder.
+
+### Validation
+
+Validation logic is centralized inside the utils folder to avoid duplication and improve reusability.
+
+### Styling
+
+Custom CSS is used to create a clean, modern, and responsive checkout experience.
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project:
+
+```bash
+cd ecommerce-checkout
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Learning Outcomes
+
+* Understanding React component architecture
+* Managing form state using React
+* Implementing form validation
+* Creating reusable UI components
+* Organizing projects using a scalable folder structure
+* Building responsive user interfaces
+
+---
+
+## Future Enhancements
+
+* Shopping Cart Integration
+* API-based Checkout
+* Authentication Support
+* Payment Gateway Integration
+* Order History Management
+
+---
+
+## Author
+
+Khadeer Mohammad
+
+Frontend Development Assignment
